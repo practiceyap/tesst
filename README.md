@@ -19,9 +19,9 @@ final class ProfileViewController: UIViewController {
         guard let profile = profile else {
             return
         }
-        nameLabel.text = profile.name
-        loginLabel.text = profile.loginName
-        descriptionLabel.text = profile.bio
+        profileName.text = profile.name
+        profileLogin.text = profile.loginName
+        profileDescription.text = profile.bio
         
         profileImageServiceObserver = NotificationCenter.default
             .addObserver(
